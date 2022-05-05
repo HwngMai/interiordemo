@@ -1,0 +1,289 @@
+html,body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(255, 255, 255);
+}
+*{
+    box-sizing: border-box;
+}
+/* Header */
+.header{
+    width: 96%;
+    margin: 2%;
+}
+.header img{
+    width:33%;
+    height: 50%;
+}
+.header #img1{
+    border-style: solid;
+    border-right-width: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.header #img2{
+    width: 32.8%;
+    border-style: solid;
+    border-right-width: 0px;
+    border-left-width: 0px;
+}
+.header #img3{
+    border-style: solid;
+    border-left-width: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.header ul{
+    border-style:solid;
+    border-radius:20px;
+    border-color: red;
+    list-style: none;
+    background-color:rgb(197, 207, 209);
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 10px;
+}
+.header ul li a{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+    width: 80px;
+}
+.header ul li a:hover{
+    color:red;
+    transition: color 0.3s;
+}
+.header__navitem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header ul li{
+    width: 150px;
+    height: 60px;
+    display: inline;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    border: 1px;
+    border-style:solid;
+    border-width: 3px;
+    border-color: red;
+    padding: 2px;
+    border-radius: 10px;
+}
+.header ul li:hover{
+    width:200px;
+    border-color: blue;
+    transition: width 0.5s, border-color 0.4s;
+
+}
+/* Carousel */
+.carousel {
+    margin: 0px;
+    background-image:url("../img/chilling.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: 1350px;
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-position:50% 50%;
+    position: relative;
+}
+/* Product */
+.product{
+    margin-bottom: 5px;
+}
+.product h1 {
+    font-size: 30px;
+    text-align: center;
+    color:black;
+}
+.product__item{
+    float:left;
+    width: 33.3%;
+    padding: 0px 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.product__item img{
+    width: 100%;
+    border-style: solid;
+    border-color: red;
+    border-radius: 20px;
+}
+.product__item h2{
+    text-align: center;
+    position: relative;
+}
+.product__item p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.product__item button{
+    size: 10%;
+    background-color: rgb(255, 255, 255);
+    color:rgb(255, 0, 0);
+    border-color: red;
+    border-width: 1.5px;
+    margin: 0;
+    position:absolute;
+    top:100%;
+    left:50%;
+    align-items: center;
+    padding: 10px 20px;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    border-radius: 10px;
+    border-style: solid;
+    box-shadow: 0px 0px 0px;
+}
+.product__item button:hover{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px 5px rgba(116, 16, 16, 0.393);
+    transition: color 0.3s;
+    transition: box-shadow 0.3s;
+}
+.product__item button:active{
+    opacity: 0.4;
+    background-color: white;
+    box-shadow: 0px 0px 0px ;
+}
+/* Intro */
+.intro p{
+    color:brown;
+    font-size: 20px;
+}
+.intro__content{
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    height: 700px;
+}
+.intro__content img{
+    border-style: solid;
+    border-color: red;
+    border-radius: 20px;
+}
+.intro__content__smallitem:hover{
+    margin: 5%;
+    transition: margin 0.3s;
+    cursor: pointer;
+}
+.intro__content__bigitem:hover{
+    margin: 5%;
+    transition: margin 0.3s;
+    cursor: pointer;
+}
+.intro__content__left {
+    float:left;
+    width: 48%;
+    margin: 1% 0.25% 1% 1.75%;
+}
+.intro__content__right {
+    float:left;
+    width: 48%;
+    margin: 1% 1.75% 1% 0.25%;
+}
+.intro__content__smallitem img{
+    width: 47%;
+    float:left;
+    margin: 1.5%;
+}
+.intro__content__bigitem img{
+    width: 97%;
+    float:left;
+    margin: 1.5%;
+}
+/* Banner */
+.banner{
+    background-image:url("../img/thinking.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: 1350px;
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-position:50% 31%;
+    position: relative;
+}
+.banner__circle{
+    border-style: solid;
+    border-color: red;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: #992fc741 ;
+    color:white;
+    text-align: center;
+    opacity: 0.6;
+    position:absolute;
+    top:30px;
+    left: 150px;
+}
+.banner__circle:hover{
+    cursor: pointer;
+    border-style: solid;
+    border-color:blue;
+    border-width: 20px;
+    /* width: 400px;
+    height: 400px; */
+    transition: border-color 0.3s, border-width 0.4s;
+    /* width 0.4s, height 0.4s; */
+}
+.banner__circle p:first-child{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+.banner__circle p:nth-child(2){
+    font-size: 80px;
+    margin: 0px;
+}
+.banner__circle p:nth-child(3),p:nth-child(4){
+    margin: 0px;
+}
+/* Servive */
+.service__content{
+    margin-top: 20px;
+    margin-bottom:20px;
+    width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service__item{
+    width: 30%;
+    margin: 1.6666667%;
+    border-style: solid;
+    border-radius: 20px;
+    border-color:red;
+
+}
+.service__item i{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: red;
+    margin-top: 20px;
+}
+.service__item h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.service__item p{
+    text-align: center;
+}
+/* Footer */
+.footer{
+    background-color: rgb(175, 187, 169);
+    color:rgb(61, 56, 47);
+    text-align: center;
+}
+.footer h2, .footer p{
+    padding: 5px;
+    margin: 0px;
+
+}
